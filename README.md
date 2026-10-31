@@ -64,3 +64,15 @@ Kiểm tra:
 curl http://localhost:5001/health
 
 Lưu ý: File backend/.env chỉ lưu trên máy và không được đưa lên GitHub.
+
+## Render Backend API
+
+Service: api-235619
+URL: https://api-235619.onrender.com
+Health: https://api-235619.onrender.com/health
+Devices API: https://api-235619.onrender.com/api/devices
+
+Runtime: Docker
+Database: MongoDB Atlas
+Root Directory: backend
+Environment Variables: MONGODB_URI, NODE_ENV
