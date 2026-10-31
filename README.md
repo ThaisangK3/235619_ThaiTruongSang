@@ -65,17 +65,10 @@ curl http://localhost:5001/health
 
 Lưu ý: File backend/.env chỉ lưu trên máy và không được đưa lên GitHub.
 
-## Câu 8. Triển khai backend API trên Render
+## Câu 6. Đóng gói frontend bằng Docker
+Docker Hub: https://hub.docker.com/r/235619thaitruongsang/frontend
 
-Service: api-235619
-URL: https://api-235619.onrender.com
-Health: https://api-235619.onrender.com/health
-Devices API: https://api-235619.onrender.com/api/devices
-
-Runtime: Docker
-Database: MongoDB Atlas
-Root Directory: backend
-Environment Variables: MONGODB_URI, NODE_ENV
+Image: `235619thaitruongsang/frontend:1.0`
 
 ## Câu 7. Triển khai frontend trên Render
 
@@ -87,6 +80,18 @@ Backend URL: https://api-235619.onrender.com
 Environment Variable: BACKEND_URL
 
 Frontend kết nối Backend API thông qua Nginx reverse proxy.
+
+## Câu 8. Triển khai backend API trên Render
+
+Service: api-235619
+URL: https://api-235619.onrender.com
+Health: https://api-235619.onrender.com/health
+Devices API: https://api-235619.onrender.com/api/devices
+
+Runtime: Docker
+Database: MongoDB Atlas
+Root Directory: backend
+Environment Variables: MONGODB_URI, NODE_ENV
 
 ## Câu 9. Kiểm tra tổng thể và hoàn thiện bài nộp
 
