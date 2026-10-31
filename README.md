@@ -45,3 +45,22 @@ Docker Hub, Render và các URL triển khai sẽ được cập nhật ở nh�
 
 ## 6. Bảo mật
 Không đưa mật khẩu, access token hoặc chuỗi kết nối chứa thông tin xác thực lên GitHub.
+
+## Docker Backend
+
+Docker Hub:
+https://hub.docker.com/r/235619thaitruongsang/backend
+
+Image:
+235619thaitruongsang/backend:1.0
+
+Build và push:
+docker buildx build --platform linux/amd64 -t 235619thaitruongsang/backend:1.0 -f backend/Dockerfile --push backend
+
+Chạy container:
+docker run -d --name classroom-backend-test -p 5001:5000 --env-file backend/.env 235619thaitruongsang/backend:1.0
+
+Kiểm tra:
+curl http://localhost:5001/health
+
+Lưu ý: File backend/.env chỉ lưu trên máy và không được đưa lên GitHub.
