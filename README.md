@@ -87,3 +87,33 @@ Backend URL: https://api-235619.onrender.com
 Environment Variable: BACKEND_URL
 
 Frontend kết nối Backend API thông qua Nginx reverse proxy.
+
+## Câu 9. Kiểm tra tổng thể và hoàn thiện bài nộp
+
+Sinh viên: Thái Trường Sang
+MSSV: 235619
+
+### Kiến trúc hệ thống
+React + Vite -> Nginx -> Node.js + Express -> MongoDB Atlas
+
+### Các đường dẫn triển khai
+GitHub: https://github.com/ThaisangK3/235619_ThaiTruongSang
+Docker Backend: https://hub.docker.com/r/235619thaitruongsang/backend
+Docker Frontend: https://hub.docker.com/r/235619thaitruongsang/frontend
+Render Frontend: https://web-235619.onrender.com
+Render Backend: https://api-235619.onrender.com
+
+### Chức năng
+- Hiển thị danh sách thiết bị
+- Xem chi tiết thiết bị
+- Thêm thiết bị
+- Sửa thông tin thiết bị
+- Xóa thiết bị
+- Tìm kiếm thiết bị
+
+### Kiểm thử
+- Backend API kết nối MongoDB Atlas thành công.
+- Frontend và Backend đã triển khai trên Render.
+- Nginx reverse proxy trả về HTTP 200 cho API thiết bị.
+- Đã sửa lỗi 502 Bad Gateway.
+- File .env không được đưa lên GitHub.
