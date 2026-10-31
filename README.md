@@ -46,7 +46,7 @@ Docker Hub, Render và các URL triển khai sẽ được cập nhật ở nh�
 ## 6. Bảo mật
 Không đưa mật khẩu, access token hoặc chuỗi kết nối chứa thông tin xác thực lên GitHub.
 
-## Docker Backend
+## Câu 5. Đóng gói backend bằng Docker và đẩy lên Docker Hub
 
 Docker Hub:
 https://hub.docker.com/r/235619thaitruongsang/backend
@@ -65,7 +65,7 @@ curl http://localhost:5001/health
 
 Lưu ý: File backend/.env chỉ lưu trên máy và không được đưa lên GitHub.
 
-## Render Backend API
+## Câu 8. Triển khai backend API trên Render
 
 Service: api-235619
 URL: https://api-235619.onrender.com
@@ -77,7 +77,7 @@ Database: MongoDB Atlas
 Root Directory: backend
 Environment Variables: MONGODB_URI, NODE_ENV
 
-## Render Frontend
+## Câu 7. Triển khai frontend trên Render
 
 Service: web-235619
 URL: https://web-235619.onrender.com
