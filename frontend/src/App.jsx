@@ -1,6 +1,6 @@
 import React,{useEffect,useState} from 'react';
 import{Monitor,Plus,Search,RefreshCw,Pencil,Trash2,Eye,X,Package,AlertCircle,CheckCircle2}from'lucide-react';
-const API=(import.meta.env.VITE_API_URL||'http://localhost:5000').replace(/\/$/,'');
+const API=(import.meta.env.VITE_API_URL||'').replace(/\/$/,'');
 const empty={deviceId:'',name:'',deviceType:'Máy chiếu',room:'',brand:'',model:'',quantity:1,status:'Đang sử dụng',purchaseDate:'',description:''};
 const statuses=['Đang sử dụng','Hư hỏng','Đang sửa chữa','Ngừng sử dụng'];
 async function request(path,options={}){let response;try{response=await fetch(`${API}${path}`,{...options,headers:{'Content-Type':'application/json',...options.headers}})}catch{throw new Error('Không thể kết nối API. Kiểm tra backend và VITE_API_URL.')}const data=await response.json().catch(()=>({}));if(!response.ok)throw new Error(data.message||data.error||`Lỗi HTTP ${response.status}`);return data;}
