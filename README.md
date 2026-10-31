@@ -76,3 +76,14 @@ Runtime: Docker
 Database: MongoDB Atlas
 Root Directory: backend
 Environment Variables: MONGODB_URI, NODE_ENV
+
+## Render Frontend
+
+Service: web-235619
+URL: https://web-235619.onrender.com
+Runtime: Docker + Nginx
+Root Directory: frontend
+Backend URL: https://api-235619.onrender.com
+Environment Variable: BACKEND_URL
+
+Frontend kết nối Backend API thông qua Nginx reverse proxy.
